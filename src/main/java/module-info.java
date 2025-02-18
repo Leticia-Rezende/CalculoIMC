@@ -4,5 +4,6 @@ module org.imc.calculoimc {
 
 
     opens org.imc.calculoimc to javafx.fxml;
+    exports  org.imc.calculoimc.controller to javafx.fxml;
     exports org.imc.calculoimc;
 }
