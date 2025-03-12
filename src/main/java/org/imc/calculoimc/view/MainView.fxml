@@ -15,8 +15,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.imc.calculoimc.controller.MainController">
    <children>
       <MenuBar>
         <menus>
@@ -39,7 +40,7 @@
       </MenuBar>
       <HBox prefHeight="221.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="166.0" prefWidth="292.0">
+            <VBox prefHeight="193.0" prefWidth="307.0">
                <children>
                   <GridPane prefHeight="138.0" prefWidth="284.0">
                     <columnConstraints>
@@ -58,17 +59,17 @@
                         <Label text="Nome" />
                         <Label text="Altura" GridPane.rowIndex="2" />
                         <Label prefHeight="23.0" prefWidth="51.0" text="Peso(kg)" GridPane.rowIndex="4" />
-                        <TextField GridPane.rowIndex="1">
+                        <TextField fx:id="txtNome" GridPane.rowIndex="1">
                            <GridPane.margin>
                               <Insets bottom="1.0" left="4.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField GridPane.rowIndex="3">
+                        <TextField fx:id="txtAltura" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets bottom="1.0" left="4.0" />
                            </GridPane.margin>
                         </TextField>
-                        <TextField GridPane.rowIndex="5">
+                        <TextField fx:id="txtPeso" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets bottom="1.0" left="4.0" />
                            </GridPane.margin>
@@ -78,17 +79,31 @@
                         <Insets left="8.0" />
                      </VBox.margin>
                   </GridPane>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="267.0">
                      <children>
-                        <Button mnemonicParsing="false" text="Calcular IMC">
+                        <Button fx:id="btnNovo" mnemonicParsing="false" onAction="#onBtnNovo" prefWidth="80.0" text="Novo">
                            <HBox.margin>
                               <Insets right="10.0" />
-                           </HBox.margin></Button>
-                        <Button mnemonicParsing="false" text="Salvar">
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="1.0" />
+                           </padding></Button>
+                        <Button fx:id="btnIMC" layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#onBtnCalcularImc" prefWidth="80.0" text="IMC">
+                           <padding>
+                              <Insets right="1.0" />
+                           </padding>
+                        </Button>
+                        <Button fx:id="btnSalvar" mnemonicParsing="false" onAction="#onBtnSalvar" prefWidth="80.0" text="Salvar">
                            <HBox.margin>
                               <Insets right="10.0" />
-                           </HBox.margin></Button>
-                        <Button mnemonicParsing="false" text="Carregar" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="1.0" />
+                           </padding></Button>
+                        <Button fx:id="btnCarregar" mnemonicParsing="false" onAction="#onBtnCarregar" prefHeight="17.0" prefWidth="81.0" text="Carregar">
+                           <padding>
+                              <Insets right="1.0" />
+                           </padding></Button>
                      </children>
                      <VBox.margin>
                         <Insets />
@@ -99,7 +114,16 @@
                   <Insets top="5.0" />
                </HBox.margin>
             </VBox>
-            <Pane prefHeight="200.0" prefWidth="301.0" />
+            <Pane prefHeight="198.0" prefWidth="19.0" />
+            <VBox prefHeight="198.0" prefWidth="235.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="69.0" text="Calculo IMC" />
+                  <Label fx:id="lbIMC" contentDisplay="CENTER" prefHeight="105.0" prefWidth="140.0" text="0.00">
+                     <font>
+                        <Font size="72.0" />
+                     </font></Label>
+               </children>
+            </VBox>
          </children>
       </HBox>
       <TableView prefHeight="200.0" prefWidth="200.0">
@@ -108,7 +132,7 @@
           <TableColumn prefWidth="100.0" text="Nome" />
             <TableColumn prefWidth="62.0" text="Altura" />
             <TableColumn prefWidth="74.0" text="Peso(kg)" />
-            <TableColumn prefWidth="303.0" text="Classificação" />
+            <TableColumn prefWidth="303.0" text="IMC" />
         </columns>
       </TableView>
    </children>
