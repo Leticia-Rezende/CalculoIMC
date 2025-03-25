@@ -122,6 +122,7 @@
                      <font>
                         <Font size="72.0" />
                      </font></Label>
+                  <Label fx:id="labelTipoDeImc" text="Classificação IMC: " />
                </children>
             </VBox>
          </children>

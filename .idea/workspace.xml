@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725a5eb1-1be1-4b62-8e42-21561eb741c6" name="Changes" comment="Calcular o IMC - Inicio">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/model/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/utils/IdGenerator.java" afterDir="false" />
+    <list default="true" id="725a5eb1-1be1-4b62-8e42-21561eb741c6" name="Changes" comment="Ajuste nas telas">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/model/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/model/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/utils/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/utils/IDGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/imc/calculoimc/view/MainView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Unifan/CalculoIMC",
+    "last_opened_file_path": "C:/Users/Unifan/ExpressaoLambda",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -117,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739925595495</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Ajuste nas telas">
+      <created>1741740350308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741740350308</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Calcular o IMC - Inicio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Calcular o IMC - Inicio" />
+    <MESSAGE value="Ajuste nas telas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste nas telas" />
   </component>
 </project>

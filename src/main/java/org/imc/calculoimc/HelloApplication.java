@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader();
         Parent root = fxmlLoader.load(new FileInputStream(PathFXML.pathBase() + "\\MainView.fxml"));
         Scene scene = new Scene(root, 600, 400);
-        stage.setTitle("Hello!");
+        stage.setTitle("Calcular IMC!");
         stage.setScene(scene);
         stage.show();
     }

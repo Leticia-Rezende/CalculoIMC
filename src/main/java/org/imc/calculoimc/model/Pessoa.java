@@ -62,9 +62,7 @@ public class Pessoa {
         this.imc = imc;
     }
 
-    public String getClassificacao() {
-        return classificacao;
-    }
+
 
     public void setClassificacao(String classificacao) {
         this.classificacao = classificacao;
